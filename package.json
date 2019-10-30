@@ -1,0 +1,16 @@
+{
+  "name": "arc-example-babel-basic",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "npx babel ./lib -d ./src --copy-files --include-dotfiles",
+    "start": "npm run build && npx arc sandbox",
+    "deploy": "npm run build && npx arc deploy"
+  },
+  "dependencies": {
+    "@architect/architect": "^6.0.21",
+    "@babel/cli": "^7.6.4",
+    "@babel/core": "^7.6.4",
+    "@babel/plugin-proposal-optional-chaining": "^7.6.0",
+    "@babel/preset-env": "^7.6.3"
+  }
+}
